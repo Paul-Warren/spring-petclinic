@@ -8,8 +8,10 @@
 ![First Successful Build](figures/first_successful_build.png)  
 1. **5 pts** The section of the POM file showing the coordinates after you’ve changed them.
 ![Updated Maven Coordinates](figures/updated_maven_coordinates.png)  
-1. **5 pts** Your Travis CI dashboard showing a successful build after your change of the group ID.  
-1. **5 pts** The section of the POM file showing the coordinates after you’ve commented them out.  
+1. **5 pts** Your Travis CI dashboard showing a successful build after your change of the group ID.
+![Build Passing After Coordinate Update](figures/build_passing_after_coordinate_update.png)    
+1. **5 pts** The section of the POM file showing the coordinates after you’ve commented them out.
+![Commented Out Coordinates](figures/commented_out_coordinates.png)  
 1. **5 pts** Your Travis CI dashboard showing the unsuccessful build after the breaking change.  
 1. **5 pts** Your Github repository with the readme.md file selected showing the build failed status after the Travis CI build fails.  
 1. **5 pts** The section of the POM file showing the coordinates after you’ve fixed them.  
