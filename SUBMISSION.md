@@ -18,5 +18,7 @@
 ![Github Failed Build](figures/github_failed_build.png)  
 1. **5 pts** The section of the POM file showing the coordinates after you’ve fixed them.
 ![Replace Coordinates](figures/replace_coordinates.png)  
-1. **5 pts** Your Travis CI dashboard showing the successful build after the breaking change has been fixed.  
-1. **5 pts** Your Github repository with the readme.md file selected showing the build success status after the Travis CI build has recovered.  
+1. **5 pts** Your Travis CI dashboard showing the successful build after the breaking change has been fixed.
+![Travis Fixed Build](figures/travis_fixed_build.png)  
+1. **5 pts** Your Github repository with the readme.md file selected showing the build success status after the Travis CI build has recovered.
+![Github Fixed Build](figures/github_fixed_build.png)  
