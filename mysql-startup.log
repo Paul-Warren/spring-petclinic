@@ -1,0 +1,176 @@
+ 2019-03-09 12:45:10 ⌚  |2.3.3| LC02S2ES2G8WN in ~/DePaul/spring-petclinic
+± pw |master ↑1 U:2 ✗| → docker-compose up
+Creating network "spring-petclinic_default" with the default driver
+Pulling mysql (mysql:5.7)...
+5.7: Pulling from library/mysql
+f7e2b70d04ae: Pull complete
+df7f6307ff0a: Pull complete
+e29ed02b1013: Pull complete
+9cb929db392c: Pull complete
+42cc77b24286: Pull complete
+a6d57750cc73: Pull complete
+79510826e343: Pull complete
+07e462ad61e2: Pull complete
+fa594cb5b94d: Pull complete
+1b44278270ad: Pull complete
+3edb3c323f55: Pull complete
+Creating spring-petclinic_mysql_1_832687edbeb5 ... done
+Attaching to spring-petclinic_mysql_1_622d55481dd0
+mysql_1_622d55481dd0 | Initializing database
+mysql_1_622d55481dd0 | 2019-03-09T18:45:40.377680Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+mysql_1_622d55481dd0 | 2019-03-09T18:45:41.238942Z 0 [Warning] InnoDB: New log files created, LSN=45790
+mysql_1_622d55481dd0 | 2019-03-09T18:45:41.391790Z 0 [Warning] InnoDB: Creating foreign key constraint system tables.
+mysql_1_622d55481dd0 | 2019-03-09T18:45:41.404543Z 0 [Warning] No existing UUID has been found, so we assume that this is the first time that this server has been started. Generating a new UUID: 89feb221-429b-11e9-af1f-0242ac120002.
+mysql_1_622d55481dd0 | 2019-03-09T18:45:41.406835Z 0 [Warning] Gtid table is not ready to be used. Table 'mysql.gtid_executed' cannot be opened.
+mysql_1_622d55481dd0 | 2019-03-09T18:45:41.409577Z 1 [Warning] root@localhost is created with an empty password ! Please consider switching off the --initialize-insecure option.
+mysql_1_622d55481dd0 | Database initialized
+mysql_1_622d55481dd0 | Initializing certificates
+mysql_1_622d55481dd0 | Generating a RSA private key
+mysql_1_622d55481dd0 | ...........................................................................+++++
+mysql_1_622d55481dd0 | .........................................................................................................................................+++++
+mysql_1_622d55481dd0 | unable to write 'random state'
+mysql_1_622d55481dd0 | writing new private key to 'ca-key.pem'
+mysql_1_622d55481dd0 | -----
+mysql_1_622d55481dd0 | Generating a RSA private key
+mysql_1_622d55481dd0 | .....+++++
+mysql_1_622d55481dd0 | .+++++
+mysql_1_622d55481dd0 | unable to write 'random state'
+mysql_1_622d55481dd0 | writing new private key to 'server-key.pem'
+mysql_1_622d55481dd0 | -----
+mysql_1_622d55481dd0 | Generating a RSA private key
+mysql_1_622d55481dd0 | ................................+++++
+mysql_1_622d55481dd0 | ................................................+++++
+mysql_1_622d55481dd0 | unable to write 'random state'
+mysql_1_622d55481dd0 | writing new private key to 'client-key.pem'
+mysql_1_622d55481dd0 | -----
+mysql_1_622d55481dd0 | Certificates initialized
+mysql_1_622d55481dd0 | MySQL init process in progress...
+mysql_1_622d55481dd0 | 2019-03-09T18:45:49.625303Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+mysql_1_622d55481dd0 | 2019-03-09T18:45:49.630898Z 0 [Note] mysqld (mysqld 5.7.25) starting as process 94 ...
+mysql_1_622d55481dd0 | 2019-03-09T18:45:49.642856Z 0 [Note] InnoDB: PUNCH HOLE support available
+mysql_1_622d55481dd0 | 2019-03-09T18:45:49.642908Z 0 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+mysql_1_622d55481dd0 | 2019-03-09T18:45:49.642924Z 0 [Note] InnoDB: Uses event mutexes
+mysql_1_622d55481dd0 | 2019-03-09T18:45:49.642933Z 0 [Note] InnoDB: GCC builtin __atomic_thread_fence() is used for memory barrier
+mysql_1_622d55481dd0 | 2019-03-09T18:45:49.642943Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+mysql_1_622d55481dd0 | 2019-03-09T18:45:49.642957Z 0 [Note] InnoDB: Using Linux native AIO
+mysql_1_622d55481dd0 | 2019-03-09T18:45:49.643198Z 0 [Note] InnoDB: Number of pools: 1
+mysql_1_622d55481dd0 | 2019-03-09T18:45:49.643373Z 0 [Note] InnoDB: Using CPU crc32 instructions
+mysql_1_622d55481dd0 | 2019-03-09T18:45:49.645342Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+mysql_1_622d55481dd0 | 2019-03-09T18:45:49.659960Z 0 [Note] InnoDB: Completed initialization of buffer pool
+mysql_1_622d55481dd0 | 2019-03-09T18:45:49.668202Z 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+mysql_1_622d55481dd0 | 2019-03-09T18:45:49.703440Z 0 [Note] InnoDB: Highest supported file format is Barracuda.
+mysql_1_622d55481dd0 | 2019-03-09T18:45:49.788087Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+mysql_1_622d55481dd0 | 2019-03-09T18:45:49.789154Z 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+mysql_1_622d55481dd0 | 2019-03-09T18:45:49.857415Z 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+mysql_1_622d55481dd0 | 2019-03-09T18:45:49.868207Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.
+mysql_1_622d55481dd0 | 2019-03-09T18:45:49.868268Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.
+mysql_1_622d55481dd0 | 2019-03-09T18:45:49.869659Z 0 [Note] InnoDB: 5.7.25 started; log sequence number 2525007
+mysql_1_622d55481dd0 | 2019-03-09T18:45:49.870322Z 0 [Note] Plugin 'FEDERATED' is disabled.
+mysql_1_622d55481dd0 | 2019-03-09T18:45:49.871465Z 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+mysql_1_622d55481dd0 | 2019-03-09T18:45:49.916783Z 0 [Note] InnoDB: Buffer pool(s) load completed at 190309 18:45:49
+mysql_1_622d55481dd0 | 2019-03-09T18:45:49.919389Z 0 [Note] Found ca.pem, server-cert.pem and server-key.pem in data directory. Trying to enable SSL support using them.
+mysql_1_622d55481dd0 | 2019-03-09T18:45:49.927034Z 0 [Warning] CA certificate ca.pem is self signed.
+mysql_1_622d55481dd0 | 2019-03-09T18:45:49.932865Z 0 [Warning] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+mysql_1_622d55481dd0 | 2019-03-09T18:45:50.208147Z 0 [Note] Event Scheduler: Loaded 0 events
+mysql_1_622d55481dd0 | 2019-03-09T18:45:50.208518Z 0 [Note] mysqld: ready for connections.
+mysql_1_622d55481dd0 | Version: '5.7.25'  socket: '/var/run/mysqld/mysqld.sock'  port: 0  MySQL Community Server (GPL)
+mysql_1_622d55481dd0 | Warning: Unable to load '/usr/share/zoneinfo/iso3166.tab' as time zone. Skipping it.
+mysql_1_622d55481dd0 | Warning: Unable to load '/usr/share/zoneinfo/leap-seconds.list' as time zone. Skipping it.
+mysql_1_622d55481dd0 | 2019-03-09T18:46:00.203444Z 0 [Note] InnoDB: page_cleaner: 1000ms intended loop took 4533ms. The settings might not be optimal. (flushed=200 and evicted=0, during the time.)
+mysql_1_622d55481dd0 | Warning: Unable to load '/usr/share/zoneinfo/zone.tab' as time zone. Skipping it.
+mysql_1_622d55481dd0 | Warning: Unable to load '/usr/share/zoneinfo/zone1970.tab' as time zone. Skipping it.
+mysql_1_622d55481dd0 | mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql_1_622d55481dd0 |
+mysql_1_622d55481dd0 | 2019-03-09T18:46:00.676393Z 0 [Note] Giving 0 client threads a chance to die gracefully
+mysql_1_622d55481dd0 | 2019-03-09T18:46:00.676452Z 0 [Note] Shutting down slave threads
+mysql_1_622d55481dd0 | 2019-03-09T18:46:00.676467Z 0 [Note] Forcefully disconnecting 0 remaining clients
+mysql_1_622d55481dd0 | 2019-03-09T18:46:00.676482Z 0 [Note] Event Scheduler: Purging the queue. 0 events
+mysql_1_622d55481dd0 | 2019-03-09T18:46:00.676584Z 0 [Note] Binlog end
+mysql_1_622d55481dd0 | 2019-03-09T18:46:00.683595Z 0 [Note] Shutting down plugin 'ngram'
+mysql_1_622d55481dd0 | 2019-03-09T18:46:00.683735Z 0 [Note] Shutting down plugin 'partition'
+mysql_1_622d55481dd0 | 2019-03-09T18:46:00.683774Z 0 [Note] Shutting down plugin 'BLACKHOLE'
+mysql_1_622d55481dd0 | 2019-03-09T18:46:00.683783Z 0 [Note] Shutting down plugin 'ARCHIVE'
+mysql_1_622d55481dd0 | 2019-03-09T18:46:00.683792Z 0 [Note] Shutting down plugin 'PERFORMANCE_SCHEMA'
+mysql_1_622d55481dd0 | 2019-03-09T18:46:00.683824Z 0 [Note] Shutting down plugin 'MRG_MYISAM'
+mysql_1_622d55481dd0 | 2019-03-09T18:46:00.683837Z 0 [Note] Shutting down plugin 'MyISAM'
+mysql_1_622d55481dd0 | 2019-03-09T18:46:00.683852Z 0 [Note] Shutting down plugin 'INNODB_SYS_VIRTUAL'
+mysql_1_622d55481dd0 | 2019-03-09T18:46:00.683871Z 0 [Note] Shutting down plugin 'INNODB_SYS_DATAFILES'
+mysql_1_622d55481dd0 | 2019-03-09T18:46:00.683880Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLESPACES'
+mysql_1_622d55481dd0 | 2019-03-09T18:46:00.683889Z 0 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN_COLS'
+mysql_1_622d55481dd0 | 2019-03-09T18:46:00.683900Z 0 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN'
+mysql_1_622d55481dd0 | 2019-03-09T18:46:00.683908Z 0 [Note] Shutting down plugin 'INNODB_SYS_FIELDS'
+mysql_1_622d55481dd0 | 2019-03-09T18:46:00.683916Z 0 [Note] Shutting down plugin 'INNODB_SYS_COLUMNS'
+mysql_1_622d55481dd0 | 2019-03-09T18:46:00.683925Z 0 [Note] Shutting down plugin 'INNODB_SYS_INDEXES'
+mysql_1_622d55481dd0 | 2019-03-09T18:46:00.683968Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLESTATS'
+mysql_1_622d55481dd0 | 2019-03-09T18:46:00.683975Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLES'
+mysql_1_622d55481dd0 | 2019-03-09T18:46:00.683983Z 0 [Note] Shutting down plugin 'INNODB_FT_INDEX_TABLE'
+mysql_1_622d55481dd0 | 2019-03-09T18:46:00.683990Z 0 [Note] Shutting down plugin 'INNODB_FT_INDEX_CACHE'
+mysql_1_622d55481dd0 | 2019-03-09T18:46:00.683998Z 0 [Note] Shutting down plugin 'INNODB_FT_CONFIG'
+mysql_1_622d55481dd0 | 2019-03-09T18:46:00.684005Z 0 [Note] Shutting down plugin 'INNODB_FT_BEING_DELETED'
+mysql_1_622d55481dd0 | 2019-03-09T18:46:00.684015Z 0 [Note] Shutting down plugin 'INNODB_FT_DELETED'
+mysql_1_622d55481dd0 | 2019-03-09T18:46:00.684024Z 0 [Note] Shutting down plugin 'INNODB_FT_DEFAULT_STOPWORD'
+mysql_1_622d55481dd0 | 2019-03-09T18:46:00.684031Z 0 [Note] Shutting down plugin 'INNODB_METRICS'
+mysql_1_622d55481dd0 | 2019-03-09T18:46:00.684040Z 0 [Note] Shutting down plugin 'INNODB_TEMP_TABLE_INFO'
+mysql_1_622d55481dd0 | 2019-03-09T18:46:00.684048Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_POOL_STATS'
+mysql_1_622d55481dd0 | 2019-03-09T18:46:00.684056Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE_LRU'
+mysql_1_622d55481dd0 | 2019-03-09T18:46:00.684066Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE'
+mysql_1_622d55481dd0 | 2019-03-09T18:46:00.684085Z 0 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX_RESET'
+mysql_1_622d55481dd0 | 2019-03-09T18:46:00.684093Z 0 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX'
+mysql_1_622d55481dd0 | 2019-03-09T18:46:00.684102Z 0 [Note] Shutting down plugin 'INNODB_CMPMEM_RESET'
+mysql_1_622d55481dd0 | 2019-03-09T18:46:00.684110Z 0 [Note] Shutting down plugin 'INNODB_CMPMEM'
+mysql_1_622d55481dd0 | 2019-03-09T18:46:00.684117Z 0 [Note] Shutting down plugin 'INNODB_CMP_RESET'
+mysql_1_622d55481dd0 | 2019-03-09T18:46:00.684127Z 0 [Note] Shutting down plugin 'INNODB_CMP'
+mysql_1_622d55481dd0 | 2019-03-09T18:46:00.684134Z 0 [Note] Shutting down plugin 'INNODB_LOCK_WAITS'
+mysql_1_622d55481dd0 | 2019-03-09T18:46:00.684142Z 0 [Note] Shutting down plugin 'INNODB_LOCKS'
+mysql_1_622d55481dd0 | 2019-03-09T18:46:00.684150Z 0 [Note] Shutting down plugin 'INNODB_TRX'
+mysql_1_622d55481dd0 | 2019-03-09T18:46:00.684158Z 0 [Note] Shutting down plugin 'InnoDB'
+mysql_1_622d55481dd0 | 2019-03-09T18:46:00.684340Z 0 [Note] InnoDB: FTS optimize thread exiting.
+mysql_1_622d55481dd0 | 2019-03-09T18:46:00.685764Z 0 [Note] InnoDB: Starting shutdown...
+mysql_1_622d55481dd0 | 2019-03-09T18:46:00.790436Z 0 [Note] InnoDB: Dumping buffer pool(s) to /var/lib/mysql/ib_buffer_pool
+mysql_1_622d55481dd0 | 2019-03-09T18:46:00.796184Z 0 [Note] InnoDB: Buffer pool(s) dump completed at 190309 18:46:00
+mysql_1_622d55481dd0 | 2019-03-09T18:46:02.527727Z 0 [Note] InnoDB: Shutdown completed; log sequence number 12359654
+mysql_1_622d55481dd0 | 2019-03-09T18:46:02.530242Z 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+mysql_1_622d55481dd0 | 2019-03-09T18:46:02.530262Z 0 [Note] Shutting down plugin 'MEMORY'
+mysql_1_622d55481dd0 | 2019-03-09T18:46:02.530274Z 0 [Note] Shutting down plugin 'CSV'
+mysql_1_622d55481dd0 | 2019-03-09T18:46:02.530595Z 0 [Note] Shutting down plugin 'sha256_password'
+mysql_1_622d55481dd0 | 2019-03-09T18:46:02.530643Z 0 [Note] Shutting down plugin 'mysql_native_password'
+mysql_1_622d55481dd0 | 2019-03-09T18:46:02.531067Z 0 [Note] Shutting down plugin 'binlog'
+mysql_1_622d55481dd0 | 2019-03-09T18:46:02.534137Z 0 [Note] mysqld: Shutdown complete
+mysql_1_622d55481dd0 |
+mysql_1_622d55481dd0 |
+mysql_1_622d55481dd0 | MySQL init process done. Ready for start up.
+mysql_1_622d55481dd0 |
+mysql_1_622d55481dd0 | 2019-03-09T18:46:02.816393Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+mysql_1_622d55481dd0 | 2019-03-09T18:46:02.821452Z 0 [Note] mysqld (mysqld 5.7.25) starting as process 1 ...
+mysql_1_622d55481dd0 | 2019-03-09T18:46:02.829080Z 0 [Note] InnoDB: PUNCH HOLE support available
+mysql_1_622d55481dd0 | 2019-03-09T18:46:02.829202Z 0 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+mysql_1_622d55481dd0 | 2019-03-09T18:46:02.829240Z 0 [Note] InnoDB: Uses event mutexes
+mysql_1_622d55481dd0 | 2019-03-09T18:46:02.829292Z 0 [Note] InnoDB: GCC builtin __atomic_thread_fence() is used for memory barrier
+mysql_1_622d55481dd0 | 2019-03-09T18:46:02.829518Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+mysql_1_622d55481dd0 | 2019-03-09T18:46:02.829626Z 0 [Note] InnoDB: Using Linux native AIO
+mysql_1_622d55481dd0 | 2019-03-09T18:46:02.830166Z 0 [Note] InnoDB: Number of pools: 1
+mysql_1_622d55481dd0 | 2019-03-09T18:46:02.830488Z 0 [Note] InnoDB: Using CPU crc32 instructions
+mysql_1_622d55481dd0 | 2019-03-09T18:46:02.832297Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+mysql_1_622d55481dd0 | 2019-03-09T18:46:02.840734Z 0 [Note] InnoDB: Completed initialization of buffer pool
+mysql_1_622d55481dd0 | 2019-03-09T18:46:02.842829Z 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+mysql_1_622d55481dd0 | 2019-03-09T18:46:02.888967Z 0 [Note] InnoDB: Highest supported file format is Barracuda.
+mysql_1_622d55481dd0 | 2019-03-09T18:46:02.963796Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+mysql_1_622d55481dd0 | 2019-03-09T18:46:02.964570Z 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+mysql_1_622d55481dd0 | 2019-03-09T18:46:03.035751Z 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+mysql_1_622d55481dd0 | 2019-03-09T18:46:03.046211Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.
+mysql_1_622d55481dd0 | 2019-03-09T18:46:03.046264Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.
+mysql_1_622d55481dd0 | 2019-03-09T18:46:03.047206Z 0 [Note] InnoDB: Waiting for purge to start
+mysql_1_622d55481dd0 | 2019-03-09T18:46:03.098980Z 0 [Note] InnoDB: 5.7.25 started; log sequence number 12359654
+mysql_1_622d55481dd0 | 2019-03-09T18:46:03.100202Z 0 [Note] Plugin 'FEDERATED' is disabled.
+mysql_1_622d55481dd0 | 2019-03-09T18:46:03.102145Z 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+mysql_1_622d55481dd0 | 2019-03-09T18:46:03.147486Z 0 [Note] Found ca.pem, server-cert.pem and server-key.pem in data directory. Trying to enable SSL support using them.
+mysql_1_622d55481dd0 | 2019-03-09T18:46:03.158096Z 0 [Note] InnoDB: Buffer pool(s) load completed at 190309 18:46:03
+mysql_1_622d55481dd0 | 2019-03-09T18:46:03.158904Z 0 [Warning] CA certificate ca.pem is self signed.
+mysql_1_622d55481dd0 | 2019-03-09T18:46:03.161465Z 0 [Note] Server hostname (bind-address): '*'; port: 3306
+mysql_1_622d55481dd0 | 2019-03-09T18:46:03.161657Z 0 [Note] IPv6 is available.
+mysql_1_622d55481dd0 | 2019-03-09T18:46:03.161744Z 0 [Note]   - '::' resolves to '::';
+mysql_1_622d55481dd0 | 2019-03-09T18:46:03.161801Z 0 [Note] Server socket created on IP: '::'.
+mysql_1_622d55481dd0 | 2019-03-09T18:46:03.165265Z 0 [Warning] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+mysql_1_622d55481dd0 | 2019-03-09T18:46:03.428545Z 0 [Note] Event Scheduler: Loaded 0 events
+mysql_1_622d55481dd0 | 2019-03-09T18:46:03.429412Z 0 [Note] mysqld: ready for connections.
+mysql_1_622d55481dd0 | Version: '5.7.25'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server (GPL)
